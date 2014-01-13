@@ -5,9 +5,11 @@ AngularJS & Express Boilerplate project showing the use of Express, AngularJS, B
 
 With node installed, use the following to demo the project:
 
-- npm install
-- bower install
-- grunt
-- node server/server.js
+```
+npm install
+bower install
+grunt
+node server/server.js
+```
 
 Check out the site at http://localhost:3000
