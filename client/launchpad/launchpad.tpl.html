@@ -1,0 +1,31 @@
+<div class="container launchpad">
+	<div class="visible-xs inline">
+		<div class="group" ng-repeat="group in groups">
+			<div class="row group-header">{{group.category}}</div>
+			<ul>
+				<li class="row" ng-repeat="app in group.apps" ng-controller="LaunchpadCtrl">
+					<a class="app-link" href="{{app.url}}">
+						<i class="{{app.icon}}"></i>
+						<div class="caption">{{app.name}}</div>
+						<i class="icon-angle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="hidden-xs icon row">
+		<div class="panel col-md-6 col-sm-12" ng-repeat="group in groups">
+			<div class="panel-heading">{{group.category}}</div>
+			<div class="panel-body">
+				<ul class="row">
+					<li class="col-lg-4 col-md-6 col-sm-4 app-icon" ng-repeat="app in group.apps" ng-controller="LaunchpadCtrl">
+						<a href="{{app.url}}">
+							<i class="{{app.icon}}"></i>
+							<div class="caption">{{app.name}}</div>
+						</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>		
+</div>

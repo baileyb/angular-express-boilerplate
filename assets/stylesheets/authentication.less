@@ -1,0 +1,39 @@
+@import 'colors';
+
+.login {
+	margin-top: 100px;
+
+	.panel {
+		background: none;
+
+		.panel-heading {
+			font-size: 20px;
+			text-align: center;
+			background: rgba(22, 160, 133, 0.8); 
+			color: @clouds;
+			border-bottom: 6px solid rgba(22, 160, 133, 1);
+		}
+
+		.panel-body {
+			background: rgba(127, 140, 141, 0.3);
+			color: @clouds;
+			font-weight: normal;
+			font-size: 18px;
+
+			.form-group {
+				&.buttons {
+					margin-top: 40px;
+					text-align: right;
+
+					button {
+						margin-left: 10px;
+						width: 100px;
+						background: rgba(22, 160, 133, 0.8);
+						border: none;
+						color: @clouds;
+					}
+				}
+			}
+		}
+	}
+}

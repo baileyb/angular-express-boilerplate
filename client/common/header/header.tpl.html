@@ -1,0 +1,24 @@
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-text navigation">
+		<div ng-switch on="navigation.isLogo">
+			<span ng-switch-when="true">[Logo Here]</span>
+			<span ng-switch-default>
+				<a href="{{navigation.button.href}}">
+					<i class="{{navigation.button.icon}}"></i>
+					<span class="text">{{navigation.button.text}}</span>
+				</a>
+			</span>
+		</div>
+	</div>
+	<div ng-switch on="header.isLoggedIn">
+		<div ng-switch-when="true" class="hidden-xs navbar-text navbar-right userinfo">
+			<span>{{header.user.name}}</span>
+			<a href="#"><i class="icon-user"></i>Settings</a>
+			<a href="#"><i class="icon-lock"></i>Sign Out</a>
+		</div>
+		<div ng-switch-when="true" class="visible-xs navbar-text navbar-right userinfo">
+			<i class="icon-user"></i>
+			<i class="icon-lock"></i>
+		</div>
+	</div>
+</div>
