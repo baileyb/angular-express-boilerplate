@@ -1,0 +1,23 @@
+{
+  "name": "angular-express",
+  "description": "boilerplate angular/express app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.0",
+    "winston": "0.7.2",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "passport-wsfed-saml2": "~0.8.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
